@@ -6,8 +6,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: italic;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,41 +16,41 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 2em;
   width: 50vw;
   min-height: 80vh;
-  max-height: auto;
   box-shadow: 0px 3px 10px black;
 }
 
 .containerQuestions {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-main p {
+.question {
+  width: 80%;
+}
+
+.title {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-}
-.question {
-  width: 70%;
-}
-
-.title {
   box-shadow: 0px 2px 3px rgb(199, 187, 19);
-  padding: 10px;
-
 }
 
-.hidden{
-  opacity: 0;
-  visibility: 0;
+.hidden {
+  display: none;
 }
+
+img:hover {
+  cursor: pointer;
+}
+
 @media (min-width: 320px) {
   /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
 }
